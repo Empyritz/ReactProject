@@ -4,7 +4,7 @@
   height: 609px;
   position: absolute;
   top: 0;
-  right: 15%;
+  right: 30%;
   bottom: 0;
   margin: auto;
   opacity: 0;
@@ -34,4 +34,24 @@
 .svg-container {
   stroke: #ffd700;
   stroke-width: 10px;
+}
+
+@media (max-width: 1423px){
+  .logo-container{
+    width: 300px;
+    height: 509px;
+    right: 20%;
+  }
+}
+
+@media (max-width: 899px){
+  .logo-container{
+    right: 20%;
+  }
+  .solid-logo{
+    opacity: 0.03 !important; 
+  }
+  svg{
+    opacity: 0.5;
+  }
 }

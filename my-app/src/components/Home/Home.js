@@ -5,7 +5,7 @@ import './home.scss'
 import AnimatedLetters from '../AnimatedLetters/Animated'
 import Logo from './Logo/Logo'
 import Loader from 'react-loaders'
- 
+import { Box, Grid, Stack } from '@mui/material'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -22,8 +22,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="container home-page">
-        <div className="text-zone">
+      <Stack className="container home-page" direction={{ xs: 'column', md: 'row'}} alignItems='center' justifyContent={{xs: 'center', md: 'initial'}}>
+        <Stack className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
@@ -38,9 +38,9 @@ const Home = () => {
           </h1>
           <h2>Frontend Developer / Javascrpit / React with Redux and Router</h2>
           <Link to='/contact' className='flat-button'>CONTACT ME</Link>
-        </div>
+        </Stack>
         <Logo />
-      </div>
+      </Stack>
       <Loader type="pacman" />
     </>
   )

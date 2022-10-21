@@ -9,6 +9,7 @@ body {
   background: #022c43;
   overflow: hidden;
   display: block;
+  box-size: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

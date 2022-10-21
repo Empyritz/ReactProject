@@ -1,8 +1,8 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
+  width: 70px;
   height: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   z-index: 3;
   min-height: 500px;
@@ -34,7 +34,7 @@
     width: 100%;
 
     a {
-      font-size: 22px;
+      font-size: 24px;
       color: #4d4d4e;
       display: block;
       line-height: 51px;
@@ -95,7 +95,7 @@
   }
   ul {
     position: absolute;
-    bottom: 20px;
+    bottom: 23px;
     width: 100%;
     display: block;
     padding: 0;
@@ -107,7 +107,7 @@
       a {
         padding: 7px 0;
         display: block;
-        font-size: 15px;
+        font-size: 20px;
         line-height: 16px;
 
         &:hover svg {

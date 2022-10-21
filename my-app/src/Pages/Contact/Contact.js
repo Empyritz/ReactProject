@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters/Animated'
+import AnimatedLetters from '../../components/AnimatedLetters/Animated'
 import './contact.scss'
 import 'animate.css'
 import emailjs from '@emailjs/browser'
