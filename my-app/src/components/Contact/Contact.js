@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../../components/AnimatedLetters/Animated'
+import AnimatedLetters from '../AnimatedLetters/Animated'
 import './contact.scss'
 import 'animate.css'
 import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import { Stack, Grid } from '@mui/material'
 
 
 const Contact = () => {
@@ -42,8 +43,8 @@ const Contact = () => {
 
   return(
     <>
-      <div className='container contact-page'>
-        <div className='text-zone'>
+      <Grid container className='container contact-page' alignItems={{md: 'center'}}>
+        <Grid item className='text-zone' xs={10} lg={6} margin={{ xs: '88px auto' }} > 
           <h1>
             <AnimatedLetters strArray={arrContact} letterClass={letterClass} idx={15}/>
           </h1>
@@ -71,27 +72,29 @@ const Contact = () => {
               </ul>
             </form>
           </div>
-        </div>
-        <div className='info-map'>
-          Fabian,
-          <br/>
-          Nava Pereda,
-          <br/>
-          Real Alcala,
-          <br/>
-          Ojo de agua
-          <br/>
-          <span>fabian.nava.pereda@gmail.com</span>
-        </div>
-        <div className='map-wrap'>
-          <MapContainer center={[19.643999, -98.978551]} zoom={23}>
-            <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
-            <Marker position={[19.643999, -98.978551]}> 
-              <Popup>Fabian lives here, come here in a sunny day or not, just bring ice cream and lets talk</Popup>
-            </Marker>
-          </MapContainer >
-        </div>
-      </div>
+        </Grid>
+        <Grid item direction='column' xs={12} md={6} alignItems='center'>
+          <div >
+          <div className='info-map'>
+            Fabian,
+            <br/>
+            Nava Pereda,
+            <br/>
+            Ojo de agua
+            <br/>
+            <span>fabian.nava.pereda@gmail.com</span>
+          </div>
+          <div className='map-wrap'>
+            <MapContainer center={[19.643999, -98.978551]} zoom={23}>
+              <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
+              <Marker position={[19.643999, -98.978551]}> 
+                <Popup>Fabian lives here, come here in a sunny day or not, just bring ice cream and lets talk</Popup>
+              </Marker>
+            </MapContainer >
+          </div>
+          </div>
+        </Grid>
+      </Grid>
       <Loader type='pacman'/>
     </>
   )

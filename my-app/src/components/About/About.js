@@ -1,10 +1,11 @@
-import { faAngular, faCss3, faGitAlt, faHtml5, faReact } from '@fortawesome/free-brands-svg-icons'
-import { faSquare } from '@fortawesome/free-solid-svg-icons'
+import { faCss3, faGitAlt, faHtml5, faReact, faSquareJs, faGithub } from '@fortawesome/free-brands-svg-icons'
+// import { faSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../../components/AnimatedLetters/Animated'
+import AnimatedLetters from '../AnimatedLetters/Animated'
 import './about.scss'
+import { Stack } from '@mui/material'
 
 const About = ()=> {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -20,8 +21,8 @@ const About = ()=> {
   
   return (
     <>
-      <div className='container about-page'>
-      <div className='text-zone'>
+      <Stack className='container about-page' justifyContent='center' direction={{ xs: 'row', lg: 'column' }} >
+      <Stack className='text-zone about-info' sx={{ marginLeft: '3%' }} >
         <h1>
           <AnimatedLetters letterClass={letterClass} strArray={arrAbout} idx={15}/>
         </h1>
@@ -36,16 +37,16 @@ const About = ()=> {
         </p>
   
         <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            If I need to define myself in one sentence that would be a curious person, 
+            every day looking to learn something new, live new experiencies,
+            passionate to the arts and science
         </p>
-      </div>
+      </Stack>
 
       <div className='stage-cube-cont'>
         <div className='cubespinner'>
           <div className='face1'>
-            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+            <FontAwesomeIcon icon={faSquareJs} color="#efd81d" />
           </div>
           <div className='face2'>
             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -57,14 +58,14 @@ const About = ()=> {
             <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
           </div>
           <div className='face5'>
-            <FontAwesomeIcon icon={faSquare} color="#EFD81D" />
+            <FontAwesomeIcon icon={faGithub} color="black" />
           </div>
           <div className='face6'>
-            <FontAwesomeIcon icon={faGitAlt} color="#EC4D" />
+            <FontAwesomeIcon icon={faGitAlt} color="green" />
           </div>
         </div>
       </div>
-      </div>
+      </Stack>
       <Loader type='pacman'/>
     </>
 

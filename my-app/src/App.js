@@ -2,8 +2,8 @@ import './App.scss';
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layowt/Layout'
 import Home from './components/Home/Home';
-import About from './Pages/About/About';
-import Contact from './Pages/Contact/Contact';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (

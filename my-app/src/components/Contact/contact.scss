@@ -1,3 +1,4 @@
+
 .contact-form {
   width: 100%;
   margin-top: 20px;
@@ -77,6 +78,12 @@
     border: 1px solid #ffd700;
     border-radius: 7px;
     float: right;
+
+    &:hover{
+      background-color: #ffd700;
+      font-weight: 700;
+      color: black;
+    }
   }
 
 }
@@ -84,21 +91,24 @@
 .info-map {
   position: absolute;
   background-color: #000;
-  top: 95px;
+  top: 18%;
+  border-radius: 23px;
   right: 3.6%;
+  margin: 0;
   z-index: 9999;
-  width: 267px;
+  width: 20%;
+  // height: 13rem;
   padding: 20px;
   color: #fff;
   font-family: 'Helvetica';
-  font-size: 17px;
+  font-size: 1.6rem;
   font-weight: 300;
   opacity: 0;
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
 
   span {
-    font-size: 16px;
+    font-size: 1.3rem;
     display: block;
     padding-top: 20px;
     color: #ffd700;
@@ -106,12 +116,13 @@
 }
 
 .map-wrap {
+  border-radius: 13px;
+  overflow: hidden;
   background: rgba(8, 253, 216, 0.1);
-  // float: right;
   position: absolute;
-  top: 300px;
-  right: -6%;
-  width: 33%;
+  top: 200px;
+  right: 4%;
+  width: 40%;
   height: 60%;
 
 }
@@ -119,8 +130,28 @@
 .leaflet-container {
   width: 100%;
   height: 100%;
-  position: relative;
+  // display: grid;
+  // place-content: center;
+  // position: relative;
   opacity: 0;
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
+}
+
+@media (max-width: 1200px) {
+  .contact-page{
+    overflow-y: scroll;
+    // height: 230vh;
+  }
+  .info-map{
+    top: 80%;
+    right: 7%
+  }
+  .map-wrap {
+    top: 80%;
+    right: 10%;
+    width: 80%;
+    // border-radius: 1rem;
+    // padding-bottom: 5rem;
+  }
 }
