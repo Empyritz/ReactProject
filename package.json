@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "empyritz/github.io/portafolio",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@emotion/react": "^11.10.4",
@@ -48,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
