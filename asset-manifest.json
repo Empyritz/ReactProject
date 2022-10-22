@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/github.io/portafolio/static/css/main.95446a9e.css",
+    "main.js": "/github.io/portafolio/static/js/main.1bc8a35f.js",
+    "static/js/787.28cb0dcd.chunk.js": "/github.io/portafolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/helvetica-neu.ttf": "/github.io/portafolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/logo_sub.png": "/github.io/portafolio/static/media/logo_sub.19f3ab25ab15fd848b30.png",
+    "static/media/LaBelleAurore.woff2": "/github.io/portafolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo-s.png": "/github.io/portafolio/static/media/logo-s.bfc9f81846bda5218dab.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/github.io/portafolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/github.io/portafolio/index.html",
+    "main.95446a9e.css.map": "/github.io/portafolio/static/css/main.95446a9e.css.map",
+    "main.1bc8a35f.js.map": "/github.io/portafolio/static/js/main.1bc8a35f.js.map",
+    "787.28cb0dcd.chunk.js.map": "/github.io/portafolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95446a9e.css",
+    "static/js/main.1bc8a35f.js"
+  ]
+}
